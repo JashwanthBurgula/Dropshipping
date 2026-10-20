@@ -1,0 +1,39 @@
+﻿# Node.js / Next.js
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Logs and editor files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local databases and Docker data
+*.db
+*.sqlite
+*.sqlite3
+postgres_data/
+redis_data/
+.storage/
+.local-inbox.json
+test-results/
+playwright-report/
+*.tsbuildinfo
+

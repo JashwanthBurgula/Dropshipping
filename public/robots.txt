@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /ops-portal/
+Disallow: /checkout/
+Disallow: /account/

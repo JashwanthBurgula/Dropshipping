@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --color-paper: #FFFFFF;
+  --color-sand: #F5F6F7;
+  --color-ink: #101828;
+  --color-ink-muted: #475467;
+  --color-stone: #DDE1E6;
+  --color-clay: #1D4ED8;
+  --color-clay-hover: #1E40AF;
+  --color-clay-text: #1D4ED8;
+  --color-moss: #15803D;
+  --color-amber: #FFB400;
+  --color-amber-text: #101828;
+  --color-brick: #B42318;
+  --color-header-navy: #0F2742;
+  --color-buy-now: #C2410C;
+  --color-warning-text: #92400E;
+  --color-warning-bg: #FEF3C7;
+}
+
+@theme inline {
+  --color-paper: var(--color-paper);
+  --color-sand: var(--color-sand);
+  --color-ink: var(--color-ink);
+  --color-ink-muted: var(--color-ink-muted);
+  --color-stone: var(--color-stone);
+  --color-clay: var(--color-clay);
+  --color-clay-hover: var(--color-clay-hover);
+  --color-clay-text: var(--color-clay-text);
+  --color-moss: var(--color-moss);
+  --color-amber: var(--color-amber);
+  --color-amber-text: var(--color-amber-text);
+  --color-brick: var(--color-brick);
+  --color-header-navy: var(--color-header-navy);
+  --color-buy-now: var(--color-buy-now);
+  --color-warning-text: var(--color-warning-text);
+  --color-warning-bg: var(--color-warning-bg);
+
+  --font-display: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+
+  --radius-none: 0px;
+  --radius-control: 4px;
+  --radius-card: 8px;
+
+  --spacing-content: 1280px;
+  --max-width-content: 1280px;
+
+  --shadow-card: 0 1px 3px 0 rgba(16, 24, 40, 0.05);
+
+  --transition-duration-fast: 150ms;
+  --transition-duration-base: 200ms;
+  --transition-duration-slow: 250ms;
+}
+
+@layer base {
+  html {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--color-sand);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+    background-color: var(--color-sand);
+    color: var(--color-ink);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-price {
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  .tabular-price {
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+    font-variant-numeric: tabular-nums;
+  }
+
+  *:focus-visible {
+    outline: 2px solid var(--color-clay);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
